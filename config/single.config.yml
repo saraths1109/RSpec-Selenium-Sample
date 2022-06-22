@@ -1,6 +1,6 @@
-server: ENV["HOST"]
-user: ENV["LT_USERNAME"]
-key: ENV["LT_ACCESS_KEY"]
+server: ${HOST}
+user: ${LT_USERNAME}
+key: ${LT_ACCESS_KEY}
 
 common_caps:
   "build": "RSpec Selenium Demo"
