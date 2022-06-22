@@ -1,4 +1,4 @@
-server: "hub.lambdatest.com"
+server: ENV["HOST"]
 user: "LT_USERNAME"
 key: "LT_ACCESS_KEY"
 
