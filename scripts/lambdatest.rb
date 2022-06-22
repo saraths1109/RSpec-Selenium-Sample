@@ -6,6 +6,7 @@ TASK_ID = (ENV['TASK_ID'] || 0).to_i
 CONFIG_NAME = ENV['CONFIG_NAME'] || 'single'
 
 CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__), "../config/#{CONFIG_NAME}.config.yml")))
+CONFIG['server'] = ENV['HOST'] || CONFIG['server']
 CONFIG['user'] = ENV['LT_USERNAME'] || CONFIG['user']
 CONFIG['key'] = ENV['LT_ACCESS_KEY'] || CONFIG['key']
 

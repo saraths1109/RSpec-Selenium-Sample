@@ -1,6 +1,6 @@
-server: ${HOST}
-user: ${LT_USERNAME}
-key: ${LT_ACCESS_KEY}
+server: "hub.lambdatest.com"
+user: "LT_USERNAME"
+key: "LT_ACCESS_KEY"
 
 common_caps:
   "build": "RSpec Selenium Demo"
